@@ -1,0 +1,512 @@
+/* Спецификация */
+@font-face {
+  font-family: "Gill Sans MT";
+  src: url("../fonts/GillSansMT.eot");
+  src: url("../fonts/GillSansMT.eot?#iefix") format("embedded-opentype")
+      url("../fonts/GillSansMT.ttf") format("truetype"),
+    url("../fonts/GillSansMT.woff") format("woff"),
+    url("../fonts/GillSansMT.woff2") format("woff2"),
+    url("../fonts/GillSansMT.svg#svgFontName") format("svg");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gill Sans MT-BOLD";
+  src: url("../fonts/GillSansMT-Bold.eot");
+  src: url("../fonts/GillSansMT-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GillSansMT-Bold.woff2") format("woff2"),
+    url("../fonts/GillSansMT-Bold.woff") format("woff"),
+    url("../fonts/GillSansMT-Bold.ttf") format("truetype"),
+    url("../fonts/GillSansMT-Bold.svg#svgFontName") format("svg");
+  font-weight: bold;
+}
+body {
+  background-color: #f4f4f5;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+button:hover,
+button:focus {
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gill Sans MT-BOLD";
+  font-weight: bold;
+  color: #26272d;
+  line-height: 1.16em;
+}
+
+p {
+  font-family: "Gill Sans MT";
+  color: #8c8f94;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #26272d;
+  transition: all 0.7s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  color: cyan;
+  box-shadow: 0 8px 20px rgb(37, 0, 249 / 100%);
+  transition: all 0.7s ease;
+}
+
+a:active {
+  color: royalblue;
+}
+
+.btn {
+  border-radius: 29px;
+  background-color: #267df4;
+  color: #fff;
+  font-weight: 400;
+  padding: 17px 0;
+  display: block;
+  text-align: center;
+  transition: all 0.7s ease;
+}
+
+.btn:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 8px 20px rgb(37 0 249 / 100%);
+}
+
+.btn:active {
+  background: royalblue;
+  box-shadow: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* #1 Header */
+.header {
+  padding-top: 42px;
+  background: url(../img/head-bg.png) no-repeat center / cover;
+}
+.menu-first__burger {
+  background: none;
+  margin-right: 24px;
+  padding: 0 6px 5px 6px;
+}
+
+.menu-firth__link_features {
+  margin: 0 46px 0 43px;
+}
+.logo {
+  margin: auto;
+}
+
+.menu-second__list{
+  margin-left: auto;
+  margin-right: 4px;
+}
+
+.menu-second__list_contacts {
+  margin: 0 33px;
+}
+
+.menu-second__list_help {
+  color: #1b1c1e;
+  opacity: 0.4;
+}
+.menu-second__btn {
+  display: flex !important;
+  width: 132px;
+  padding: 8px 9px 7px 17px;
+  background: #0d6efd;
+  border-radius: 20px;
+}
+.menu-second__btn_apple {
+  margin-right: 17px;
+  padding-bottom: 5px;
+}
+/* offer */
+.offer {
+  text-align: center;
+}
+
+.wrap {
+  max-width: 780px;
+}
+.offer__header {
+  font-size: 62px;
+  margin-top: 12px;
+  padding-top: 95px;
+}
+.offer__text {
+  font-size: 19px;
+  width: 780px;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+.offer__btn {
+  font-size: 16px;
+  width: 205px;
+  height: 50px;
+  color: #26272d;
+  background: none;
+  border: 1px solid #26272d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__btn_arrow {
+  margin-right: 15px;
+}
+
+.content__phone {
+  padding-top: 34px;
+}
+
+/* Features  */
+
+.features {
+  padding-top: 120px;
+}
+
+.feature__icon {
+  padding: 0;
+  width: 42px;
+  height: 51px;
+}
+
+.feature__heading {
+  font-size: 26px;
+  padding-top: 38px;
+  padding-bottom: 28px;
+}
+
+.feature__text {
+  font-size: 18px;
+  padding-right: 40px;
+  padding-bottom: 22px;
+  margin-bottom: 0;
+}
+
+/* iPhoneFeature */
+
+.iPhoneFeature {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+}
+
+.app-screen {
+  max-width: 709px;
+  height: 548px;
+  background: url("../img/iPhone-6.png") no-repeat center center / contain;
+  margin-left: -125px;
+}
+
+.section-title__heading {
+  font-size: 42px;
+  margin-bottom: 62px;
+  margin-top: 33px;
+}
+
+.section-title__text {
+  font-size: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 0;
+}
+
+.section-title__btns {
+  padding-top: 48px;
+}
+
+.section-title__btn_firth {
+  font-size: 16px;
+  width: 202px;
+  height: 42px;
+  padding: 0px 10px 0px 22px;
+}
+
+.section-title__btn_firth::after {
+  content: "";
+  display: block;
+  background: url("../img/arrow-con.svg");
+  display: inline;
+  width: 15px;
+  height: 12px;
+  margin-left: 52px;
+  padding-right: 0px;
+}
+
+.section-title__btn_second {
+  background-color: #f4f4f5;
+  color: #26272d;
+  height: 42px;
+  border: 1px solid black;
+  font-size: 16px;
+  width: auto;
+  padding: 8px 30px;
+  margin-left: 20px;
+}
+
+/* mapFeature */
+
+.mapFeature {
+  padding-top: 155px;
+  padding-bottom: 220px;
+}
+
+.section-map__heading {
+  width: 290px;
+  font-size: 42px;
+  padding-bottom: 50px;
+}
+
+.section-map__text {
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+.section-map__logo {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 41px;
+  padding-bottom: 21px;
+  font-weight: 700;
+}
+.dropbox {
+  transition: all 0.5s ease;
+}
+
+.dropbox:hover {
+  box-shadow: 0 8px 20px rgb(37 0 249 / 100%);
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.evernote {
+  transition: all 0.5s ease;
+}
+.evernote:hover {
+  box-shadow: 0 8px 20px rgb(37 0 249 / 100%);
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.section-map__logos_dropbox {
+  margin-right: 30px;
+}
+
+.map {
+  max-width: 627px;
+  height: 270px;
+  background: url("../img/world-map.png") no-repeat center center / contain;
+  margin-top: 30px;
+}
+
+/* footer  */
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__socials_text {
+  width: 232px;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.footer__header {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #26272d;
+}
+
+.footer__item {
+  padding-bottom: 12px;
+}
+.footer__link {
+  color: #8c8f94;
+}
+
+.footer__socials_app-store{
+  width: 140px;
+  height: 42px;
+  /* border: blue solid 10px; */
+  background: black;
+  border-radius: 10px;
+  padding: 5px 5px 5px 10px ;
+
+}
+
+.wrapper-app{
+  color: #fff;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.wrapper-app_firth{
+  font-size: 7px;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-app_second{
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__socials_app-store {
+  transition: all 0.5s ease;
+}
+
+.footer__socials_app-store:hover {
+  box-shadow: 0 8px 20px rgb(37 0 249 / 100%);
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+/*  Responsive  */
+
+@media (max-width: 1200px) {
+  .app-screen {
+    margin-left: 0;
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .offer__header {
+    padding-top: 65px;
+  }
+  .offer__text {
+    width: 95%;
+    padding-bottom: 10px;
+  }
+  .footer__socials {
+    margin-bottom: 30px;
+  }
+  .footer__socials_text {
+    width: auto;
+  }
+
+  .mapFeature {
+    padding-bottom: 80px;
+    padding-top: 40px;
+  }
+  .section-mapFeature__logos {
+    flex-direction: column;
+  }
+
+  .section-mapFeature__logos_dropbox {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature__text {
+    margin-bottom: 20px;
+  }
+  
+  .footer__socials {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 576px) {
+    .iPhoneFeature {
+      padding-top: 10px;
+    }
+    .footer__socials,
+    .menu {
+      text-align: center;
+    }
+
+    .section-title__btn_firth {
+      width: auto;
+      justify-content: space-evenly;
+    }
+
+    .section-title__btn_second {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 414px) {
+    .container {
+      padding: 0 15px;
+    }
+    .offer__header {
+      font-size: 40px;
+      padding-top: 20px;
+    }
+
+    .offer__btn {
+      width: auto;
+    }
+
+    .content__phone {
+      height: 400px;
+    }
+
+    .section-title__btn_second {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+    .mapFeature {
+      padding-top: 20px;
+    }
+
+    .section-title__btn_firth {
+      width: auto !important;
+      justify-content: space-evenly !important;
+    }
+  }
+
+  @media (max-width: 280px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 20px !important;
+    }
+
+    p {
+      font-size: 12px !important;
+    }
+
+    .features {
+      padding: 20px;
+    }
+  }
+}
